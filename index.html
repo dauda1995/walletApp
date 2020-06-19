@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+     <!--Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    
+    <!--custom style-->
+    <link rel="stylesheet" href="./style.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  
+   
+    <section id="form-col">
+        <div class="container">
+            <div class="errors">
+                <p id = "errors"></p>
+            </div>
+            <div class="success" >
+                <p id = "success"></p>
+            </div>
+            <div class="form-content">
+                <div>
+                    <h3>Send to</h3>
+
+                    <div class="send-to">
+                        <div>
+                            <label for="phone">Enter Phone Number</label>
+                            <input type="text" name="phone" id="mobile">
+                        </div>
+                        <div>
+                            <label for="amount">Confirm the amount</label>
+                            <input type="text" name="amount" id="amount">
+                        </div>
+                    </div>
+                   
+                    <div>
+                        <select>
+                            <option value="">Country</option>
+                            <option value="">Nigeria</option>
+                            <option value="">Ghana</option>
+                            <option value="">S/Africa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="network" id="line">
+                            <option value="">Select Network</option>
+                            <option value="glo">Glo</option>
+                            <option value="mtn">MTN</option>
+                            <option value="etisalat">9-mobile</option>
+                            <option value="airtel">Airtel</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
+
+                <div class="button-div">
+                    <button id = "submit">Send</button>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
